@@ -919,7 +919,9 @@ a:focus {
     width: 100%;
     margin: 45px 0;
     padding: 90px 0;
-    background: #9805c5;
+    /* background: #9805c5; */
+    background: linear-gradient(rgba(239, 35, 60, .95), rgba(232, 35, 239, 0.95));
+
 }
 
 .banner .container {
@@ -1465,7 +1467,9 @@ a:focus {
 .footer {
     position: relative;
     margin-top: 45px;
-    background: #9805c5;
+    /* background: #9805c5; */
+    background: linear-gradient(rgba(239, 35, 60, .95), rgba(232, 35, 239, 0.95));
+
 }
 
 .footer .container-fluid {
