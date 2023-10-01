@@ -479,6 +479,7 @@ a:focus {
 
 .about .col-lg-6 {
     padding: 0;
+    overflow: hidden;
 }
 
 .about .section-header {
@@ -487,7 +488,11 @@ a:focus {
 
 .about .about-img {
     position: relative;
+    display: flex;
+    /* transform: translate(-50%,-50%); */
+    width: 100%;
     height: 100%;
+    animation: slide 15s infinite;
 }
 
 .about .about-img img {
@@ -495,6 +500,24 @@ a:focus {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    
+}
+@keyframes slide{
+    0%{
+        transform: translate(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-20%);
+    }
+    55%{
+        transform: translateX(-300%);
+    }
 }
 
 .about .about-content {
